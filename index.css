@@ -48,10 +48,10 @@
   
   nav ul li {
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: auto;
-    padding: 3mm;
-    margin: 1mm;
+    padding: 5mm;
+    margin: 0.5mm;
     text-transform: uppercase;
     border: solid;
     border-color:silver;
@@ -64,8 +64,8 @@
   nav ul li a {
     text-align: center;
     color: rgb(224, 215, 214);
-    font-size: 8mm;
-    padding: 5px;
+    font-size: 5mm;
+    padding: 1px;
   }
   
   nav ul li a:hover {
