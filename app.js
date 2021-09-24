@@ -6,8 +6,8 @@ solicitarDatos();
 // SOLICITUD PRECIOS DE LIBROS A USUARIO
 
 function solicitarDatos (){
-    let num1 = Number (prompt ("Por favor, ingrese precio de su libro o producto a adquirir"));
-    let num2 = Number (prompt ("Por favor, ingrese segundo precio de su libro o producto"));
+    let num1 = Number (prompt ("Por favor, ingrese precio de su cuadro a adquirir"));
+    let num2 = Number (prompt ("Por favor, ingrese segundo precio de su cuadro a adquirir"));
     let operador = prompt ("Por favor, para ver el monto final a abonar, ingrese el simbolo +");
 
     calcular (num1, num2, operador);
