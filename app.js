@@ -13,8 +13,8 @@ class Compra{
 }
 const prod = prompt('Ingrese Nombre de  Cuadro, según Catálogo, que desee adquirir:')
 const qt = parseInt(prompt('¿Cuantos desea comprar ?'))
-const store = prompt('Indique dirección para envio')
+const send = prompt('Indique dirección para envio')
 
-const pedido1 = new Compra(prod, qt, store);
+const pedido1 = new Compra(prod, qt, send);
 
 alert(pedido1.Items());
