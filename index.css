@@ -106,9 +106,10 @@
     color: rgb(246, 247, 243);
     text-decoration: underline;
     text-align: center;
-    font-size: 1.9cm;
+    font-size: 3cm;
     text-decoration: underline;
     margin:5mm;
+    font-family: 'Stick No Bills', sans-serif;
   }
   
   h2 {

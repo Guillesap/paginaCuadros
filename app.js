@@ -1,41 +1,20 @@
-//COMPLEMENTARIO 4  
 
-//FUNCIONES 
-solicitarDatos();
-
-// SOLICITUD PRECIOS DE LIBROS A USUARIO
-
-function solicitarDatos (){
-    let num1 = Number (prompt ("Por favor, ingrese precio de su cuadro a adquirir"));
-    let num2 = Number (prompt ("Por favor, ingrese segundo precio de su cuadro a adquirir"));
-    let operador = prompt ("Por favor, para ver el monto final a abonar, ingrese el simbolo +");
-
-    calcular (num1, num2, operador);
-}
-
-// CALCULO
-function calcular (a,b,c) {
-
-    let res;
-
-    switch (c) {
-        case "+": res= a+b;
-        break;
-        case "-": res= a-b;
-        break;
-        case "*": res= a*b;
-        break;
-        case "/": res= a/b;
-        break;
-        default: res= "La operación es incorrecta";
-        break;
+//CLASE 5
+class Compra{
+    constructor(product, quantity, sending){
+        this.product = product,
+        this.quantity = parseInt(quantity),
+        this.sending = sending
     }
-    resultado(res);
-
-    //RESULTADO
-    function resultado (a){
-        console.log (a)
-        alert (a);
+    Items(){
+        return `Deseas comprar 1 cuadro: ${this.quantity} ${this.product} , de la tienda de Cuadros Online. Su pedido será enviado a la dirección ubicada en la calle: ${this.sending}. Muchas gracias por comprar en "Estilo Bruder"!!!!`
     }
 
 }
+const prod = prompt('Ingrese Nombre de  cuadro  que desee adquirir:')
+const qt = parseInt(prompt('Cuantos desea comprar ?'))
+const store = prompt('Indique dirección para envio')
+
+const pedido1 = new Compra(prod, qt, store);
+
+alert(pedido1.Items());
