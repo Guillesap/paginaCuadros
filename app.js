@@ -7,7 +7,7 @@ class Compra{
         this.sending = sending
     }
     Items(){
-        return `Deseas comprar 1 cuadro: ${this.quantity} ${this.product} , de la tienda de Cuadros Online. Su pedido será enviado a la dirección ubicada en la calle: ${this.sending}. Muchas gracias por comprar en "Estilo Bruder"!!!!`
+        return `Tu compra:  ${this.quantity} cuadro/s, nombre: ${this.product} . Su pedido será enviado a la dirección ubicada en la calle: ${this.sending}. Muchas gracias por comprar en "Estilo Bruder"!!!!`
     }
 
 }
