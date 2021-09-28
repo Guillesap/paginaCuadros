@@ -26,7 +26,7 @@ class Cuadro{
         this.color = color;
     }
     mirar(){
-        console.log ("Este cuadro tiene como título" + " " + (this.title) + "y el marco es de color" + " " + (this.color) );
+        console.log ("Este cuadro tiene como título" + " " + (this.title) + " " + "y el marco es de color" + " " + (this.color) );
     }
 }
 let Cuadro1 = new Cuadro ("Spider Man", "Marrón");
