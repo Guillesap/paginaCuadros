@@ -1,35 +1,82 @@
-//CLASE N° 5 INCORPORAR OBJETOS
+//CLASE N° 6
+
+class Producto {
+    constructor (nombre, precio, cantidad) {
+        this.nombre = nombre;
+        this.precio = parseInt (precio);
+        this.cantidad = cantidad;
+        this.disponible = true;
+    }
+sumarIva(){
+    return this.precio * 1.21;
+}
+Vender(){
+    this.disponible = false;
+}
+}
+var arrayProductos = [];
+    do {
+        var comprobacion = prompt ('Ingrese nombre del Cuadro y una vez ingresada la cantidad de cuadros a adquirir, coloque la palabra FIN para terminar');
+        if (comprobacion === "fin" || comprobacion === "FIN" || comprobacion === "Fin"){
+            break;
+        }else{
+            nombreP = comprobacion;
+        var precioP = prompt ('Ingrese el precio del cuadro que desea adquirir');
+        var cantidadP = prompt ('Ingrese la cantidad de cuadros que desea adquirir');
+        arrayProductos.push(new Producto(nombreP, precioP, cantidadP));
+        }
+    }
+    while (comprobacion != "fin"|| comprobacion != "FIN"|| comprobacion != "Fin")
+
+    console.log (arrayProductos);
+
+    for (var producto of arrayProductos) {
+        alert(" El Cuadro seleccionado es el llamado: "+producto.nombre+ "");
+        alert(" La cantidad solicitada es: "+producto.cantidad +"");
+        alert(" El precio  con IVA es $ "+producto.sumarIva() + "");
+
+    console.log(producto.nombre);
+    console.log(producto.cantidad);
+    console.log(producto.sumarIva());
+    }
+
+
+//CLASE 6 COMPLEMENTARIA
 class Compra{
-    constructor(product, quantity, sending){
-        this.product = product,
-        this.quantity = parseInt(quantity),
-        this.sending = sending
-    }
-    Items(){
-        return `Tu compra:  ${this.quantity} cuadro/s, nombre: ${this.product} . Su pedido será enviado a la dirección ubicada en la calle: ${this.sending}. Muchas gracias por comprar en "Estilo Bruder"!!!!`
-    }
-
-}
-const prod = prompt('Ingrese Nombre de  Cuadro, según Catálogo, que desee adquirir:')
-const qt = parseInt(prompt('¿Cuantos desea comprar ?'))
-const send = prompt('Indique dirección para envio')
-
-const pedido1 = new Compra(prod, qt, send);
-
-alert(pedido1.Items());
-
-//OTRO EJEMPLO OBJETOS
-
-class Cuadro{
-    constructor(titulo, color){
-        this.title = titulo;
-        this.color = color;
-    }
-    mirar(){
-        console.log ("Este cuadro tiene como título" + " " + (this.title) + " " + "y el marco es de color" + " " + (this.color) );
+    constructor(product, quantity, shop){
+        return {
+            product : product,
+            quantity : parseInt(quantity),
+            shop : shop,
+            Items: () => {
+            return `Su pedido es el siguiente:  ${quantity} cuadro/s, cuyo/s nombre/s es/son: ${product} que será/n retirado/s de la Sucursal del Barrio ${shop}. Su pedido ha sido tomado. Gracias por Comprar en Estilo Bruder!`
+            }
+        }
     }
 }
-let Cuadro1 = new Cuadro ("Spider Man", "Marrón");
-Cuadro1.mirar();
-let Cuadro2 = new Cuadro ("Pelota","Blanco");
-Cuadro2.mirar();
+
+let cantidadProductos = parseInt(prompt('Cuantos cuadros diferentes desea adquirir?'))
+
+let counter = 0;
+const listadoPedidos = [];
+
+while(isNaN(cantidadProductos)){
+    cantidadProductos = parseInt(prompt('Debe ingresar un valor numerico. Cuantos cuadros diferentes desea comprar?'))
+}
+
+while(counter < cantidadProductos){
+    const prod = prompt('Ingrese el nombre del cuadro que desea comprar:')
+    const qt = parseInt(prompt('Cuantos de ese cuadro  desea comprar?'))
+    const store = prompt('En que sucursal de la Tienda desea retira?')
+
+    const producto = new Compra(prod, qt, store);  
+    
+    listadoPedidos.push(producto)
+    console.log(producto.Items())
+    counter++;
+}
+
+listadoPedidos.sort((a, b) => (a.quantity > b.quantity) ? 1 : -1)
+
+console.log(listadoPedidos)
+
