@@ -262,14 +262,13 @@ body {
   }
   
 
-  
   /*FOTOS INDEX*/
   .fOtitos {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 2mm;
     padding: 3mm;
-    background-color: rgb(241, 233, 233);  
+    background-color:white;  
   }
   .fOtitos div {
     padding: 1mm 1mm 1mm 1 mm;
@@ -278,9 +277,24 @@ body {
     border: solid;
     border-color: goldenrod;
     margin: 1;
-  
   }
-  
+  /*GRID CONTACTO*/
+  .cOntacto {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 2mm;
+    padding: 3mm;
+    background-color:rgb(22, 21, 21);  
+  }
+  .cOntacto div {
+    padding: 1mm 1mm 1mm 1 mm;
+    color: #a7a791;
+    text-align: center;
+    border: solid;
+    border-color: rgb(32, 196, 218);
+    margin: 1;
+  }
+
   /*FOTOS INDEX*/
   .cArteles {
     display: grid;
@@ -324,9 +338,9 @@ button.btn.btn-info {
 }
 
 
-    /* media query */
-  
-  @media (max-width:768px) {
+/* media query */
+
+@media (max-width:768px) {
     nav{
         justify-content: flex-start;
     }
@@ -363,6 +377,7 @@ button.btn.btn-info {
         left:0;
     }
   
+
     .logo img {
       display: flex;
       flex-direction: column;
@@ -402,6 +417,11 @@ button.btn.btn-info {
       align-items: center;
       column-gap: 30mm;
     }
+    .cOntacto {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      column-gap: 30mm;
+    }
   }
-  
-  
+
