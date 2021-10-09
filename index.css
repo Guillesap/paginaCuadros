@@ -1,32 +1,27 @@
-:root {
-    --primary:#42b983;
-    --secundary:#2e4469;
-    --background:#35495e;
-    --black-text:rgb(61, 61, 61);
-    --white-text:#ffffff;
-    --blue-gradient:linear-gradient(90deg,#42b983,#35495e);
-    --button-hover:#5b79a2;
-    --text-shadow:.2rem .2rem .2rem #0d0d0e;
-  }
+/*normalizadores*/
+* {
+  margin: 0;
+  padding: 0 auto;
+  text-decoration: none;
+  box-sizing: border-box;
   
-  * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
+}
+
+/*globales*/
+body {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  background:-webkit-linear-gradient(45deg, rgba(178,202,201,1) 0%,rgba(31,44,28,1) 51%,rgba(40,28,37,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  }   
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0ca8c4;
-  }
-  
+
   /*nav*/
   
   .topheader{
     color:rgb(214, 217, 224);
     font-size: 10mm;
+    background-color: rgb(3, 16, 71);
   }
   nav {
     background-color: rgb(3, 16, 71);
@@ -38,6 +33,7 @@
   }
   
   nav ul {
+    background-color: rgb(3, 16, 71);
     display: flex;
     height: 20mm;
     padding: 1mm;
@@ -55,7 +51,7 @@
     text-transform: uppercase;
     border: solid;
     border-color:silver;
-    background-color: rgb(3, 3, 61);
+    background-color: rgb(3, 16, 71);
   }
   
   nav ul li:last-child {
@@ -66,10 +62,12 @@
     color: rgb(224, 215, 214);
     font-size: 5mm;
     padding: 1px;
+    background-color: rgb(3, 16, 71);
+    text-decoration: none;
   }
   
   nav ul li a:hover {
-    color:rgb(224, 93, 16);
+    color: gold;
     text-decoration-line: none;
     margin: 0;
   }
@@ -97,35 +95,52 @@
     margin: 1mm;
     margin-left: 1mm;
     border: solid;
-    border-color: rgb(20, 220, 193);
+    border-color: rgb(109, 165, 4);
   }
   
+  .primerFormulario {
+    text-align: center;
+    color: rgb(224, 215, 214);
+    font-size: 10mm;
+    padding: 3px;
+    background-color:rgb(136, 6, 125);
+    text-decoration: none;
+    margin-bottom:1cm;
+    margin-top: 1cm;
+  }
+  #divNotas {
+    text-align: center;
+    color: gold;
+    font-size: 10mm;
+    padding: 3px;
+    background-color:rgb(136, 6, 125);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2cm;
+  }
   /*titulos*/
   
   h1 {
-    color: rgb(246, 247, 243);
+    color: rgb(218, 60, 32);
     text-decoration: underline;
     text-align: center;
-    font-size: 3cm;
     text-decoration: underline;
-    margin:5mm;
+    margin:10mm;
+    font-size: 10px;
     font-family: 'Stick No Bills', sans-serif;
   }
   
+  #nombrepagina {
+    color:#d6d6dd;
+    font-size: 3cm;
+  }
   h2 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #b3b4af;
+    color: gold;
     padding: 10px;
-    font-size: 11mm;
-  }
-  
-  .paraTransicion:hover {
-    transition: 3s;
-    font-size: 4rem;
-    color: #051970;
-    padding: 1cm;
+    font-size: 30mm;
   }
   
   
@@ -173,15 +188,17 @@
   
   
   /*pie de pagina*/
-  footer {
-    margin: 0;
+  footer{
+    margin:0;
     text-align: center;
-    background-image: linear-gradient(to right, #080f4b, blacK);
+    background-image: linear-gradient(to right ,rgb(8, 15, 75),blacK);
+    height: 25vh;
+    padding: 10mm;
+
   }
-  
-  article, footer {
-    flex: 1;
-    margin: 0;
+  article, footer{
+    flex:1;
+    margin:0;
   }
   
   /*texto que cambia index*/
@@ -244,45 +261,7 @@
     }
   }
   
-  #main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 10mm;
-    width: 200vh;
-  }
-  
-  .aBonos {
-    color: #0de4d9;
-    text-align: center;
-    font-family: "Zen Tokyo Zoo", cursive;
-    font-size: 9mm;
-    margin: 10mm;
-  }
-  
-  .formatoItalica {
-    color: #e4ecec;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 6mm;
-  }
-  
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: dotted 1px #7a6a6e;
-    border-radius: 10%;
-    background-image: linear-gradient(to right, rgb(6, 154, 173), #080f4b);
-    margin: 1mm;
-  }
+
   
   /*FOTOS INDEX*/
   .fOtitos {
@@ -290,15 +269,16 @@
     grid-template-columns: 33% 33% 33%;
     gap: 2mm;
     padding: 3mm;
+    background-color: rgb(241, 233, 233);  
   }
   .fOtitos div {
-    background-color: rgb(9, 9, 12);
     padding: 1mm 1mm 1mm 1 mm;
     color: #a7a791;
     text-align: center;
     border: solid;
-    border-color: #e6e0e0;
+    border-color: goldenrod;
     margin: 1;
+  
   }
   
   /*FOTOS INDEX*/
@@ -307,17 +287,43 @@
     grid-template-columns: 33% 33% 33%;
     gap: 2mm;
     padding: 3mm;
+    background-color: black;
   }
   .cArteles div {
-    background-color: rgb(13, 3, 70);
+    background-color: black;
     padding: 1mm 1mm 1mm 1 mm;
     color: #a7a791;
     text-align: center;
     border: solid;
-    border-color: #e6e0e0;
+    border-color: goldenrod;
     margin: 1;
   }
-  
+
+/*formulario*/
+
+  .card {
+    background-color: black;
+    box-shadow: 10px 10px 8px #888888;
+}
+.form-label {
+    color:#94be0a ;
+    font-weight: bold; 
+    font-size: 1.5rem;
+    
+}
+
+button {
+    margin-left: 10px; 
+
+
+}
+
+button.btn.btn-info {
+    color: rgb(143, 173, 6);
+    background-color:#000a0f;
+}
+
+
     /* media query */
   
   @media (max-width:768px) {
