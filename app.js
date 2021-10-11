@@ -1,4 +1,4 @@
-// EJEMPLO DE FORMULARIO PARA SELECCIONAR UN CUADRO ALMACENAMIENTO EN LOCALSTORAGE
+// Encuesta para que el Usuario, escriba el nombre del cuadro de su agrado y quede almacenado en LocalStorage, hacienco click en botón.
 
 window.onload = iniciar;
 
@@ -8,7 +8,7 @@ function iniciar(){
   let btnTexto = document.getElementById("btnTexto");  
   btnTexto.addEventListener ("click", clickBtnTexto);
 
-  //Renderiza notas
+  //Renderiza lo escrito
   mostrarNotas ();
 }
 
@@ -23,6 +23,6 @@ function clickBtnTexto() {
  function mostrarNotas() {
  let divNOtas = document.getElementById("divNotas");
 
- //asigna las notas desde el LocalStarage
+ //asigna lo escrito desde el LocalStarage
  divNOtas.innerHTML = "Tu cuadro seleccionado es:  " + localStorage.cuadro;
 }
