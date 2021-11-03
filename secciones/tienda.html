@@ -33,28 +33,40 @@
         </header>
         <div>
             <h1 id="nombrepagina">Tienda Online</h1>
-            <div class="fOtitos">
-                <div>
-                    <img src="../multimedia/cuadro1.jpg">
+            <div>
+                <h2 id="subtitulo"> "Tenemos gran variedad de modelos, para toda la familia!"</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- Elementos generados a partir del JSON -->
+                    <main id="items" class="col-sm-8 row"></main>
+                    <!-- Carrito -->
+                    <aside class="col-sm-4">
+                        <h2>Tu Carrito de Cuadros</h2>
+                        <!-- Elementos del carrito de cuadros -->
+                        <ul id="carrito" class="list-group"></ul>
+                        <hr>
+                        <!-- Precio total -->
+                        <p class="text-right">Total: $ <span id="total"></span>;</p>
+                        <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                        <div>
+                        <button id="finalizarComprar">FINALIZAR COMPRA</button>
+                        </div> 
+                        <br>
+                        <div class="dOlar" style="width: 20rem;">
+                            <img src="../multimedia/dolar.jfif" class="card-img-top" alt="...">
+                            <div class="container">
+                              <h5 class="card-title">Si deseas abonar con Dólares, chequeá la cotización a continuación: 
+                            </div>
+                          </div>
+                        <br>
+                        <div>
+                            <div id="busqueda"></div>
+                            <div id="respuesta"> </div>
+                        </div>
+                    </div>   
+                 
+                    </aside>
                 </div>
-                <div>
-                    <img src="../multimedia/cuadro2.jpg">
-                </div>
-                <div>
-                    <img src="../multimedia/cuadro5.jpg">
-                </div>
-            </div> 
-            <div class="fOtitos">
-                <div>
-                    <img src="../multimedia/ccuadro9 (2).jpg">
-                </div>
-                <div>
-                    <img src="../multimedia/ccuadro9 (1).jpg">
-                </div>
-                <div>
-                    <img src="../multimedia/ccuadro9 (3).jpg">
-                </div>
-            </div> 
     <footer>
         <div class="pieFooter">
             <h3><a href="../index.html"><img src="../multimedia/homech.jpg"></a></h3>
@@ -62,6 +74,7 @@
         </div> 
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="../app.js"></script> 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="../js/tienda.js"></script>
 </body>
 </html>
