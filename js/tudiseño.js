@@ -1,7 +1,7 @@
 //JQUERY
 
 //Agregando titulo con selector  Class
-$(".escojeTuDiseño").append("<<h2>Poné tu nombre en tu cuadro y escojé tu modelo!!!</h2>"); 
+$(".escojeTuDiseño").append("<h2>Poné tu nombre en tu cuadro y escojé tu modelo!!!</h2>"); 
 
 //agregando frase con selector ID
 $("#print").append ('<p> En "Estilo Bruder", confeccionamos tu cuadro a tu elección! </p>');
