@@ -1,47 +1,29 @@
 //dark mode
-
 const darkMode = () => {
-  document.getElementsByTagName("body")[0].style = "background-color: black"
-
-  for (let i = 0; i < document.getElementsByTagName("h1").length; i++) {
-      document.getElementsByTagName("h1")[i].style = "color: white"
-  }
-  for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
-      document.getElementsByTagName("p")[i].style = "color: white"
-  }
-  for (let i = 0; i < document.getElementsByTagName("h2").length; i++) {
-    document.getElementsByTagName("h2")[i].style = "color: white"
-}
-
-
+  $("body").css("background-color", "black")
+  $("h1").css("color", "white")
+  $("p").css("color", "white")
+  $("h2").css("color", "white")
   localStorage.setItem("theme", "dark")
 }
 
-
-const lightMode = () => {
-  document.getElementsByTagName("body")[0].style = "background-color: white"
-
-  for (let i = 0; i < document.getElementsByTagName("h1").length; i++) {
-      document.getElementsByTagName("h1")[i].style = "color: black"
-  }
-  for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
-      document.getElementsByTagName("p")[i].style = "color: black"
-  }
-  for (let i = 0; i < document.getElementsByTagName("h2").length; i++) {
-    document.getElementsByTagName("h2")[i].style = "color: black"
-}
-
+const ligthMode = () => {
+  $("body").css("background-color", "white")
+  $("h1").css("color", "black")
+  $("p").css("color", "black")
+  $("h2").css("color", "black")
   localStorage.setItem("theme", "ligth")
 }
 
 
-document.getElementById("theme").addEventListener("click", () => {
+$("#theme").on("click", () => {
   if (localStorage.getItem("theme") === "dark") {
-      lightMode()
+      ligthMode()
   } else {
       darkMode()
   }
 })
+
 
 //ANIMACIONES JQUERY
 

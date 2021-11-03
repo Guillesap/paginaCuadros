@@ -153,7 +153,7 @@ body {
   }
   
   #nombrepagina {
-    color:rgb(7, 148, 158);   
+    color:rgb(10, 5, 90);   
     font-size: 3cm;
   }
   h2 {
@@ -161,14 +161,14 @@ body {
     margin-right: auto;
     text-align: center;
     padding: 10px;
-    color: rgb(233, 8, 8);
+    color: red;
   }
   
   h3 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #3d8105;
+    color: #e23c09;
     padding: 10px;
     font-size: 1cm;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -201,7 +201,7 @@ body {
   }
   
   p {
-    color: #a82d0e;
+    color: #8daa0a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5mm;
   }
@@ -211,7 +211,7 @@ body {
     margin-right: auto;
     text-align: center;
     font-size: 50px;
-    color: rgb(0, 255, 255);
+    color: gold;
   }
   
   /*card dolar*/
