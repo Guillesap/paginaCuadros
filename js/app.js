@@ -1,29 +1,3 @@
-//dark mode
-const darkMode = () => {
-  $("body").css("background-color", "black")
-  $("h1").css("color", "white")
-  $("p").css("color", "white")
-  $("h2").css("color", "white")
-  localStorage.setItem("theme", "dark")
-}
-
-const ligthMode = () => {
-  $("body").css("background-color", "white")
-  $("h1").css("color", "black")
-  $("p").css("color", "black")
-  $("h2").css("color", "black")
-  localStorage.setItem("theme", "ligth")
-}
-
-
-$("#theme").on("click", () => {
-  if (localStorage.getItem("theme") === "dark") {
-      ligthMode()
-  } else {
-      darkMode()
-  }
-})
-
 
 //ANIMACIONES JQUERY
 
@@ -46,3 +20,35 @@ $("#variosModelos").animate({ opacity: '0.01',
                               function(){
                                 console.log("fin de animación");                        
 });
+
+//dark mode
+const darkMode = () => {
+  $("body").css("background-color", "black")
+  $("h1").css("color", "white")
+  $("p").css("color", "white")
+  $("h2").css("color", "white")
+  $("h3").css("color", "white")
+  $("#muchoEstilo").css("background-color", "black")
+  $(".cArteles div").css("background-color", "black")
+  localStorage.setItem("oScuro", "dark")
+}
+
+const ligthMode = () => {
+  $("body").css("background-color", "white")
+  $("h1").css("color", "black")
+  $("p").css("color", "black")
+  $("h2").css("color", "black")
+  $("h3").css("color", "black")
+  $("#muchoEstilo").css("background-color", "white")
+  $(".cArteles div").css("background-color", "white")
+  localStorage.setItem("oScuro", "ligth")
+}
+
+
+$("#oScuro").on("click", () => {
+  if (localStorage.getItem("oScuro") === "dark") {
+      ligthMode()
+  } else {
+      darkMode()
+  }
+})
