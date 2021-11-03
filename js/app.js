@@ -1,31 +1,47 @@
-// EJEMPLO DE FORMULARIO PARA SELECCIONAR UN CUADRO ALMACENAMIENTO EN LOCALSTORAGE
+//dark mode
 
-window.onload = iniciar;
+const darkMode = () => {
+  document.getElementsByTagName("body")[0].style = "background-color: black"
 
-// Botón "Click aquí", advierte el click del mouse del usuario.
-
-function iniciar(){
-  let btnTexto = document.getElementById("btnTexto");  
-  btnTexto.addEventListener ("click", clickBtnTexto);
-
-  //Renderiza notas
-  mostrarNotas ();
+  for (let i = 0; i < document.getElementsByTagName("h1").length; i++) {
+      document.getElementsByTagName("h1")[i].style = "color: white"
+  }
+  for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
+      document.getElementsByTagName("p")[i].style = "color: white"
+  }
+  for (let i = 0; i < document.getElementsByTagName("h2").length; i++) {
+    document.getElementsByTagName("h2")[i].style = "color: white"
 }
 
-//funcion del boton: usuario escribe nombre de cuadro y  se almacena en el localStorage
-function clickBtnTexto() {
- let txtNotas = document.getElementById("txtNotas");
 
- localStorage.cuadro = txtNotas.value;
- mostrarNotas();
+  localStorage.setItem("theme", "dark")
 }
 
- function mostrarNotas() {
- let divNOtas = document.getElementById("divNotas");
 
- //asigna las notas desde el LocalStarage
- divNOtas.innerHTML = "Tu cuadro seleccionado es:  " + localStorage.cuadro;
+const lightMode = () => {
+  document.getElementsByTagName("body")[0].style = "background-color: white"
+
+  for (let i = 0; i < document.getElementsByTagName("h1").length; i++) {
+      document.getElementsByTagName("h1")[i].style = "color: black"
+  }
+  for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
+      document.getElementsByTagName("p")[i].style = "color: black"
+  }
+  for (let i = 0; i < document.getElementsByTagName("h2").length; i++) {
+    document.getElementsByTagName("h2")[i].style = "color: black"
 }
+
+  localStorage.setItem("theme", "ligth")
+}
+
+
+document.getElementById("theme").addEventListener("click", () => {
+  if (localStorage.getItem("theme") === "dark") {
+      lightMode()
+  } else {
+      darkMode()
+  }
+})
 
 //ANIMACIONES JQUERY
 

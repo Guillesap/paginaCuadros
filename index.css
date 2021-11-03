@@ -4,7 +4,6 @@
   padding: 0 auto;
   text-decoration: none;
   box-sizing: border-box;
-  
 }
 
 /*globales*/
@@ -12,7 +11,7 @@ body {
   display: flex;
   height: 500px;
   flex-direction: column;
-  background:-webkit-linear-gradient(45deg, rgba(178,202,201,1) 0%,rgb(88, 90, 88) 51%,rgba(40,28,37,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
   }   
   
 
@@ -144,7 +143,7 @@ body {
   /*titulos*/
   
   h1 {
-    color: rgb(235, 225, 224);
+    color: rgb(151, 203, 7);
     text-decoration: underline;
     text-align: center;
     text-decoration: underline;
@@ -154,7 +153,7 @@ body {
   }
   
   #nombrepagina {
-    color:#d6d6dd;
+    color:rgb(10, 5, 90);   
     font-size: 3cm;
   }
   h2 {
@@ -169,21 +168,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #efedf5;
+    color: #e23c09;
     padding: 10px;
     font-size: 1cm;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     animation-duration: 20s;
     animation-name: aparecer;
   }
-  #variosModelos {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 50px;
-    color: gold;
 
-  }
 
   @keyframes aparecer {
     0% {
@@ -209,9 +201,17 @@ body {
   }
   
   p {
-    color: #cac8c2;
+    color: #8daa0a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 5mm;
+  }
+  
+  #variosModelos {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    color: gold;
   }
   
   /*card dolar*/
@@ -223,6 +223,15 @@ body {
     border-color:lightseagreen;
   }
   
+  /*boton dark*/
+  #theme {
+    color:rgb(14, 13, 13);
+    border-radius: 3cm;
+    border-color: rgb(14, 128, 3);
+    margin-bottom: 2mm;
+    background-color: gold;
+
+  }
   /*boton tu diseño*/
   #btnTutexto {
     margin-left: 21cm;
@@ -322,7 +331,7 @@ body {
   }
   .fOtitos div {
     padding: 1mm 1mm 1mm 1 mm;
-    color: #a7a791;
+    color: #9192a7;
     text-align: center;
     border: solid;
     border-color: goldenrod;
@@ -338,10 +347,10 @@ body {
   }
   .cOntacto div {
     padding: 1mm 1mm 1mm 1 mm;
-    color: #a7a791;
+    color: #0b1574;
     text-align: center;
     border: solid;
-    border-color: rgb(32, 196, 218);
+    border-color: rgb(1, 24, 27);
     margin: 1;
   }
 
@@ -351,23 +360,23 @@ body {
     grid-template-columns: 33% 33% 33%;
     gap: 2mm;
     padding: 3mm;
-    background-color: black;
+    background-color: rgb(12, 43, 179);
   }
   .cArteles div {
-    background-color: black;
+    background-color: rgb(25, 6, 90);
     padding: 1mm 1mm 1mm 1 mm;
-    color: #a7a791;
+    color: #08132b;
     text-align: center;
     border: solid;
-    border-color: goldenrod;
+    border-color: rgb(233, 231, 227);
     margin: 1;
   }
 
 /*formulario*/
 
   .card {
-    background-color: black;
-    box-shadow: 10px 10px 8px #888888;
+    background-color: rgb(143, 211, 17);
+    box-shadow: 10px 10px 8px #6b3939;
 }
 .form-label {
     color:#94be0a ;
@@ -384,7 +393,7 @@ button {
 
 button.btn.btn-info {
     color: rgb(143, 173, 6);
-    background-color:#000a0f;
+    background-color:#08618d;
 }
 
 
