@@ -13,14 +13,6 @@ $("#muchoEstilo").css({
     "font-family": "Verdana",
 })
 
-//Animación frase
-$("#variosModelos").animate({ opacity: '0.01',
-                              },
-                              "slow",
-                              function(){
-                                console.log("fin de animación");                        
-});
-
 //dark mode
 const darkMode = () => {
   $("body").css("background-color", "black")

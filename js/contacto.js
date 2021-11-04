@@ -44,7 +44,6 @@ const table = document.querySelector('#table')
 
 let people = []
 
-
 const guardar = () => {
   const name = document.querySelector('#name').value
   const surname = document.querySelector('#surname').value
