@@ -8,9 +8,11 @@ $("h2").fadeIn();
 
 //MODIFICAR CSS CON JQUERY
 $("#muchoEstilo").css({
-    "background-color": "gold",
+    "background-color": "white",
     "color": "red",
+    "border-color":"black",
     "font-family": "Verdana",
+    "font-size": "100cm"
 })
 
 //dark mode
