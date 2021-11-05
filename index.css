@@ -225,20 +225,21 @@ body {
   /*boton dark*/
   #oScuro {
     color:rgb(14, 13, 13);
-    border-radius: 3cm;
-    border-color: rgb(190, 49, 14);
-    margin-bottom: 5mm;
-    background-color: gold;
-
+    border-color: rgb(10, 10, 10);
+    border-radius: 5mm;
+    margin-bottom: 2mm;
+    margin-bottom: 6mm;
+    background-color: rgb(219, 217, 207);
+    font-size: 5mm;
   }
   /*boton tu diseño*/
   #btnTutexto {
-    margin-left: 21cm;
-    color: red;
+    margin:0 auto;
+    color: rgb(19, 1, 1);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1cm;
-    border-radius: 3cm;
-    border-color: #e20707;
+    font-size: 5mm;
+    border-radius: 5cm;
+    border-color: #8dc50a;
   }
  #print {
     text-align: center;

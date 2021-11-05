@@ -22,17 +22,19 @@ const darkMode = () => {
   $("h3").css("color", "white")
   $("#muchoEstilo").css("background-color", "black")
   $(".cArteles div").css("background-color", "black")
+  $(".cArteles div").css("border-color", "white")
   localStorage.setItem("oScuro", "dark")
 }
 
 const ligthMode = () => {
-  $("body").css("background", "-webkit-linear-gradient(45deg, rgb(244, 245, 245) 0%,rgb(243, 245, 243) 51%,rgb(245, 241, 244) 100%)")
+  $("body").css("background", "-webkit-linear-gradient(45deg, rgb(244, 245, 245) 0%,rgb(244, 245, 245) 0%,rgb(244, 245, 245) 0%")
   $("h1").css("color", "black")
   $("p").css("color", "black")
   $("h2").css("color", "black")
   $("h3").css("color", "black")
   $("#muchoEstilo").css("background-color", "white")
   $(".cArteles div").css("background-color", "white")
+  $(".cArteles div").css("border-color", "black")
   localStorage.setItem("oScuro", "ligth")
 }
 
