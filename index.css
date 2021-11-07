@@ -224,12 +224,12 @@ body {
   
   /*boton dark*/
   #oScuro {
-    color:rgb(14, 13, 13);
-    border-color: rgb(10, 10, 10);
+    color:rgb(173, 173, 39);
+    background-color: rgb(10, 10, 10);
+    border-color: rgb(238, 230, 230);
     border-radius: 5mm;
-    margin-bottom: 2mm;
+    margin-bottom: 2mm; 
     margin-bottom: 6mm;
-    background-color: rgb(219, 217, 207);
     font-size: 5mm;
   }
   /*boton tu diseño*/
